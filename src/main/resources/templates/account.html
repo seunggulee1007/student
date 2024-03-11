@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>welcome</title>
+    <script>
+        document.getElementById("test2").checked = true;
+    </script>
+</head>
+<body>
+<h1>Number</h1>
+<input type="checkbox" th:checked="${#strings.equals(#strings.defaultString(transferServiceYn, 'N'), 'Y')} ? true : false">
+<input type="radio" name="test" value="Y" id="test1"/><label for="test1">test1</label>
+<input type="radio" name="test" value="N" id="test2"/><label for="test2">test2</label>
+
+</body>
+</html>
